@@ -22,9 +22,7 @@
 	|	Countdown JS
 	|-----------------------------------------------------
 	*/
-	var userDate = new Date($("#count-down-date").val()).getTime();
-	function countDown(){
-
+	function countDown(userDate){
 		var frontYears 		= $( '.years' );
 		var frontMonths 	= $( '.months' );
 		var frontDays 		= $( '.days' );
@@ -35,7 +33,7 @@
 		var countDownUl		= $( '.count-down-list' );
 
 		var currentDate = new Date().getTime();
-		var difference = userDate - currentDate;
+		var difference = userDate.getTime() - currentDate;
 		
 		if(difference < 0){
 			clearInterval(countd);
@@ -162,7 +160,9 @@
 	}
 
 	function randomDate(start, end) {
-		return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+		var rand = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+		// 31 Dec, 2019 12:00:00
+		return rand;
 	}
 
 	$("#btn-send").click(function(){
@@ -173,11 +173,12 @@
 		} else {
 			var maxDate = new Date(today.getFullYear(), 11 + Math.floor(Math.random()*(13-1+1)+1), 31);
 		}
-		$("#count-down-date").val(randomDate(today, maxDate));
+		var getRandomDate = randomDate(today, maxDate)
 		$("#count-timer").show();
-		countDown();
+		$(".subscribe-form").hide();
+		countDown(getRandomDate);
 		setInterval(function(){
-			countDown();
+			countDown(getRandomDate);
 		}, 1000);
 	});
 }(jQuery));
