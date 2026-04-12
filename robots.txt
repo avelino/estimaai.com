@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /css/bootstrap.min.css
+Disallow: /css/icofont.css
+Disallow: /css/style.css
+Disallow: /css/responsive.css
+Disallow: /js/scripts.js
+Disallow: /fonts/
+
+Sitemap: https://estimaai.com/sitemap.xml

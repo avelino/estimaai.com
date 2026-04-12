@@ -1,119 +1,258 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-BR"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-BR"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-BR"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="pt-BR">
-<!--<![endif]-->
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Framework para estimativa de tempo - Estima ai</title>
-	<meta name="description" content="Framework para estimativa de tempo de projeto">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicon
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon"> -->
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-	<!-- Ico Font CSS -->
-	<link rel="stylesheet" href="/css/icofont.css">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<!-- Style CSS -->
-	<link rel="stylesheet" href="/css/style.css">
-	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="/css/responsive.css">
+  <!-- Primary Meta -->
+  <title>Estima ai - Framework humoristico de estimativa de tempo de projeto</title>
+  <meta name="description" content="Estima ai: framework satirico de estimativa de projeto de software. Descubra quanto tempo seu projeto vai atrasar usando Scrum, XP, Kanban e outras metodologias ageis. Spoiler: mais do que voce imagina.">
+  <meta name="keywords" content="estimativa de projeto, estimativa de software, scrum, kanban, xp, agile, planning poker, no-estimate, humor dev, estimativa tempo projeto, framework estimativa">
+  <meta name="author" content="Avelino">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://estimaai.com/">
 
-	<!--[if lt IE 9 ]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	<![endif]-->
+  <!-- Language -->
+  <link rel="alternate" hreflang="pt-BR" href="https://estimaai.com/">
+  <link rel="alternate" hreflang="x-default" href="https://estimaai.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://estimaai.com/">
+  <meta property="og:title" content="Estima ai - Descubra quanto tempo seu projeto vai atrasar">
+  <meta property="og:description" content="Framework satirico de estimativa de projeto de software. Usa Scrum, XP, Kanban e mais pra te dizer o obvio: vai atrasar.">
+  <meta property="og:image" content="https://estimaai.com/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Estima ai - Framework de estimativa de tempo de projeto">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Estima ai">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Estima ai - Descubra quanto tempo seu projeto vai atrasar">
+  <meta name="twitter:description" content="Framework satirico de estimativa de projeto de software. Spoiler: vai atrasar mais do que voce imagina.">
+  <meta name="twitter:image" content="https://estimaai.com/img/og-cover.png">
+
+  <!-- Theme & Favicon -->
+  <meta name="theme-color" content="#7c5cfc">
+  <meta name="msapplication-TileColor" content="#0a0a12">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/app.css">
+
+  <!-- Structured Data: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Estima ai",
+    "url": "https://estimaai.com",
+    "description": "Framework satirico e humoristico de estimativa de tempo de projeto de software. Gera estimativas aleatorias para startups e grandes empresas usando metodologias ageis como Scrum, XP, Kanban e Planning Poker.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Avelino",
+      "url": "https://github.com/avelino"
+    },
+    "inLanguage": "pt-BR",
+    "keywords": "estimativa de projeto, scrum, kanban, xp, agile, planning poker, humor dev"
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que e o Estima ai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estima ai e um framework satirico de estimativa de projeto de software. Ele gera estimativas de tempo aleatorias para projetos, mostrando de forma humoristica como estimativas de software sao imprecisas. Para startups gera estimativas de 1-2 meses, para grandes empresas de 6 meses a 2 anos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona a estimativa de projeto no Estima ai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Voce escolhe o tipo de empresa (startup ou grande empresa) e clica em Estimar. O framework gera uma data aleatoria: startups recebem prazos de semanas a meses, grandes empresas recebem prazos de meses a anos. E uma satira sobre a imprecisao das estimativas em desenvolvimento de software."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Por que estimativas de software sao tao imprecisas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estimativas de software falham porque: requisitos mudam durante o projeto, complexidade tecnica e subestimada, dependencias externas causam atrasos, a Lei de Hofstadter diz que sempre demora mais do que esperamos (mesmo considerando essa lei), e vieses cognitivos nos fazem ser otimistas demais. O Estima ai satiriza esse fenomeno universal do desenvolvimento de software."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O Estima ai usa inteligencia artificial de verdade?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nao! O Estima ai nao usa IA de verdade. E uma brincadeira: o site gera numeros aleatorios para mostrar que muitas estimativas de projeto nao sao muito mais precisas que um chute aleatorio. A badge 'IA generativa' no site e parte da piada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais metodologias ageis o Estima ai referencia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O Estima ai faz referencia satirica as principais metodologias ageis: Scrum (sprints e planning poker), XP (Extreme Programming), Kanban (fluxo continuo), e o movimento No-Estimate que questiona se devemos estimar projetos de software. Todas sao metodologias legitimas, mas o site brinca com o fato de que nenhuma garante estimativas precisas."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://estimaai.com/"
+      }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-img body-bg">
-	<!--[if lte IE 9]>
-	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-	<![endif]-->
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
 
-	<!-- main container starts -->
-	<div class="bg-img color-white main-container">
-		<!-- Main Body Starts -->
-		<div class="fixed fixed-middle xs-no-positioning main-body">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="tab-container">
-							<div class="tab-content">
-								<!-- Single tab content starts -->
-								<div role="tabpanel" class="tab-pane fade in active text-center home-tab" id="home">\
-									<div class="tab-heading">
-										<h1 class="primary-title">Estima ai</h1>
-										<p class="text-light">Framework de estimativa de projeto usando as melhores tecnicas de desenvolvimento de software (Scrum, XP, Kambam e outros framework).</p>
-										<p class="text-light">Clique no botão para gerar uma estimativa...</p>
-									</div><!-- /end tab-heading -->
-									<div class="tab-body">
-										<div id="count-timer" class="padding-big countdown-timer" style="display: none;">
-											<ul class="list-inline count-down-list" id="countdown-boxes">
-												<li class="gray-bg-1" id="years"><span class="years"></span><span>Years</span></li>
-												<li class="gray-bg-1" id="months"><span class="months"></span><span>Months</span></li>
-												<li class="gray-bg-1" id="days"><span class="days"></span><span>Days</span></li>
-												<li class="gray-bg-1" id="hours"><span class="hours"></span><span>Hours</span></li>
-												<li class="gray-bg-1" id="minutes"><span class="minutes"></span><span>Minutes</span></li>
-												<li class="gray-bg-1" id="seconds"><span class="seconds"></span><span>Seconds</span></li>
-											</ul>
-											<h4>Você esta perdendo o tempo para entrega do seu projeto, recomendo sair imediatamente desse site e focar na sua entrega!</h4>
-										</div><!-- /end countdown-timer -->
-										<div class="subscribe-form">
-											<br />
-											<input type="radio" name="company" id="company" value="startup" checked="checked" /> Startup
-											<input type="radio" name="company" id="company" value="big" /> Grande empresa
-											<br /><br /><button  type="submit" id="btn-send" class="btn btn-cyan btn-round">Estimar!</button>
-										</div><!-- /end subscribe-form -->
-									</div><!-- /end tab-body -->
-								</div>
-								<!-- /Single tab content ends -->
-							</div><!-- /tab-content -->
-						</div>
-					</div><!-- /end col-md-12 -->
-				</div><!-- /end row -->
-			</div><!-- /end container-fluid -->
-		</div>
-		<!-- /Main Body Ends -->
-		<!-- /Main Footer Starts -->
-		<footer class="fixed fixed-bottom xs-no-positioning main-footer">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="footer-content">
-							<div class="pull-right footer-right">
-								estimaai.com
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><!-- /end container-fluid -->
-		</footer>
-		<!-- /Main Footer Ends -->
-	</div>
-	<!-- /main container ends -->
+  <header class="sr-only">
+    <nav aria-label="Navegacao principal">
+      <a href="https://estimaai.com/">Estima ai - Home</a>
+    </nav>
+  </header>
 
-	<!--[if lt IE 8]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	<![endif]-->
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-	<!-- Bootstrap JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
-	<!-- scripts -->
-	<script src="/js/scripts.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117923644-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+  <main class="container" role="main">
+    <!-- Intro Screen -->
+    <section id="intro" class="screen screen--visible" aria-labelledby="main-title">
+      <div class="badge-pill" role="status">v2.0 &mdash; agora com IA generativa*</div>
+      <h1 class="title" id="main-title">
+        <span class="title__accent">Estima</span> ai
+      </h1>
+      <p class="subtitle">
+        Framework de estimativa de projeto usando as melhores t&eacute;cnicas de desenvolvimento de software
+        <span class="subtitle__methods">(Scrum, XP, Kanban e outros)</span>
+      </p>
 
-	  gtag('config', 'UA-117923644-1');
-	</script>
+      <!-- SEO: visible content for crawlers -->
+      <article class="seo-content" aria-label="Sobre o Estima ai">
+        <h2>Como funciona</h2>
+        <p>Escolha o tipo de empresa &mdash; <strong>startup</strong> ou <strong>grande empresa</strong> &mdash; e descubra quanto tempo seu projeto de software vai levar. O Estima ai usa algoritmos avan&ccedil;ados de randomiza&ccedil;&atilde;o para gerar estimativas t&atilde;o precisas quanto as de qualquer planning poker.</p>
+        <h2>Por que estimativas falham?</h2>
+        <p>A <strong>Lei de Hofstadter</strong> diz: sempre demora mais do que voc&ecirc; espera, mesmo quando voc&ecirc; leva em conta a Lei de Hofstadter. Metodologias como <strong>Scrum</strong>, <strong>XP</strong>, <strong>Kanban</strong> e <strong>Planning Poker</strong> ajudam a organizar, mas nenhuma garante precis&atilde;o. O movimento <strong>No-Estimate</strong> questiona se devemos estimar projetos de software.</p>
+      </article>
+
+      <div class="card">
+        <p class="card__label" id="company-label">Qual o tipo da empresa?</p>
+        <div class="toggle-group" role="radiogroup" aria-labelledby="company-label">
+          <label class="toggle-option toggle-option--active" data-value="startup">
+            <input type="radio" name="company" value="startup" checked aria-label="Startup - move fast, break things">
+            <span class="toggle-option__icon" aria-hidden="true">&#127793;</span>
+            <span class="toggle-option__text">
+              <strong>Startup</strong>
+              <small>move fast, break things</small>
+            </span>
+          </label>
+          <label class="toggle-option" data-value="big">
+            <input type="radio" name="company" value="big" aria-label="Grande Empresa - processo, burocracia, comite">
+            <span class="toggle-option__icon" aria-hidden="true">&#127959;</span>
+            <span class="toggle-option__text">
+              <strong>Grande Empresa</strong>
+              <small>processo, burocracia, comit&ecirc;</small>
+            </span>
+          </label>
+        </div>
+        <button id="btn-estimate" class="btn-primary" type="button" aria-describedby="company-label">
+          <span class="btn-primary__text">Estimar!</span>
+          <span class="btn-primary__icon" aria-hidden="true">&rarr;</span>
+        </button>
+      </div>
+
+      <p class="footnote" aria-label="Aviso: nao contem IA de verdade">*n&atilde;o cont&eacute;m IA de verdade</p>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="result" class="screen" aria-labelledby="result-title">
+      <button id="btn-back" class="btn-back" type="button" aria-label="Voltar para nova estimativa">
+        &larr; Nova estimativa
+      </button>
+
+      <h2 class="result-title" id="result-title">Sua estimativa ficou pronta!</h2>
+      <p class="result-subtitle">Tempo estimado para entrega do projeto:</p>
+
+      <div class="countdown" id="countdown" role="timer" aria-live="polite" aria-label="Contagem regressiva da estimativa">
+        <div class="countdown__item" id="cd-days">
+          <span class="countdown__number" data-unit="days" aria-label="dias">00</span>
+          <span class="countdown__label">dias</span>
+        </div>
+        <div class="countdown__separator" aria-hidden="true">:</div>
+        <div class="countdown__item" id="cd-hours">
+          <span class="countdown__number" data-unit="hours" aria-label="horas">00</span>
+          <span class="countdown__label">horas</span>
+        </div>
+        <div class="countdown__separator" aria-hidden="true">:</div>
+        <div class="countdown__item" id="cd-minutes">
+          <span class="countdown__number" data-unit="minutes" aria-label="minutos">00</span>
+          <span class="countdown__label">min</span>
+        </div>
+        <div class="countdown__separator" aria-hidden="true">:</div>
+        <div class="countdown__item" id="cd-seconds">
+          <span class="countdown__number" data-unit="seconds" aria-label="segundos">00</span>
+          <span class="countdown__label">seg</span>
+        </div>
+      </div>
+
+      <div class="alert-box" role="alert">
+        <span class="alert-box__icon" aria-hidden="true">&#9888;&#65039;</span>
+        <p>Voc&ecirc; est&aacute; perdendo tempo precioso! Saia deste site imediatamente e foque na sua entrega!</p>
+      </div>
+
+      <div class="fun-facts" id="fun-facts" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <span>&copy; 2024 estimaai.com</span>
+    <a href="https://github.com/avelino/estimaai.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </footer>
+
+  <script src="/js/app.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117923644-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-117923644-1');
+  </script>
 </body>
 </html>

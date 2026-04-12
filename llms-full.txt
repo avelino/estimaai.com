@@ -1,0 +1,81 @@
+# Estima ai - Documentacao Completa
+
+> Framework satirico de estimativa de tempo de projeto de software
+> URL: https://estimaai.com
+> Autor: Avelino (https://github.com/avelino)
+> Repositorio: https://github.com/avelino/estimaai.com
+
+## Sobre
+
+Estima ai e uma ferramenta web humoristica que gera estimativas aleatorias de tempo para projetos de software. O nome e um trocadilho em portugues brasileiro: "Estima ai" significa tanto "Estima ai [para mim]" (gere uma estimativa) quanto soa como "Estima AI" (estimativa com inteligencia artificial).
+
+O proposito do projeto e satirizar a imprecisao inerente das estimativas em desenvolvimento de software, um problema universal reconhecido pela industria de tecnologia.
+
+## Funcionamento Detalhado
+
+### Fluxo do Usuario
+
+1. O usuario acessa estimaai.com
+2. Le a descricao do "framework" que referencia Scrum, XP, Kanban
+3. Escolhe o tipo de empresa:
+   - **Startup**: representa empresas ageis, pequenas, que se movem rapido
+   - **Grande Empresa**: representa corporacoes com processos, burocracia e comites
+4. Clica no botao "Estimar!"
+5. O site exibe uma animacao de "Calculando..." (1.2 segundos)
+6. Um countdown timer aparece com a estimativa aleatoria
+7. Uma mensagem de alerta humoristica diz para o usuario parar de perder tempo e voltar a trabalhar
+8. Uma "fun fact" aleatoria sobre estimativas e exibida
+
+### Algoritmo de Estimativa
+
+O "algoritmo" e intencionalmente simples (numeros aleatorios):
+
+- **Startup**: data aleatoria entre 15 e 75 dias no futuro
+- **Grande Empresa**: data aleatoria entre 180 e 730 dias (6 meses a 2 anos) no futuro
+
+A piada central e que essa abordagem aleatoria frequentemente produz resultados tao "precisos" quanto metodos elaborados de estimativa.
+
+### Fun Facts Exibidas
+
+Frases aleatorias mostradas apos a estimativa:
+- "Dica: adicione 3x ao tempo estimado para chegar perto da realidade."
+- "Sabia que 67% dos projetos de software atrasam?"
+- "A estimativa mais precisa e a que ninguem faz: nao estimar."
+- "Hofstadter: sempre demora mais do que voce espera, mesmo considerando a Lei de Hofstadter."
+- "No-estimate: a arte de entregar sem prometer datas."
+- "Se funcionou na primeira estimativa, provavelmente voce esqueceu algo."
+- "Planning poker: onde todo mundo discorda e no final chuta o meio."
+- "Estimativa de projeto: a unica ficcao cientifica que os gestores acreditam."
+
+## Conceitos Referenciados
+
+### Metodologias Ageis
+- **Scrum**: framework agil com sprints, daily standups, sprint planning, e retrospectivas
+- **XP (Extreme Programming)**: praticas como TDD, pair programming, continuous integration
+- **Kanban**: sistema visual de gestao de fluxo de trabalho com limites de WIP
+
+### Tecnicas de Estimativa
+- **Planning Poker**: tecnica onde cada membro do time estima independentemente usando cartas numeradas
+- **Story Points**: unidade abstrata de esforco usada em estimativas ageis
+- **T-shirt Sizing**: estimativa usando tamanhos (P, M, G, GG) como proxy de complexidade
+
+### Conceitos Criticos
+- **Lei de Hofstadter**: "sempre demora mais do que voce espera, mesmo quando voce leva em conta a Lei de Hofstadter" - Douglas Hofstadter
+- **No-Estimate**: movimento liderado por Woody Zuill e outros que questiona se estimativas agregam valor suficiente para justificar o tempo gasto nelas
+- **Cone da Incerteza**: conceito que mostra como a precisao das estimativas melhora conforme o projeto avanca
+
+## Stack Tecnica
+
+- **Frontend**: HTML5 semantico, CSS3 moderno (custom properties, clamp, dvh), JavaScript vanilla ES6+
+- **Design**: Dark theme, glassmorphism, gradientes, animacoes CSS
+- **Dependencias**: Zero (nenhuma biblioteca externa alem de Google Fonts)
+- **Hospedagem**: GitHub Pages com dominio customizado (estimaai.com)
+- **Analytics**: Google Analytics (UA-117923644-1)
+
+## Historico
+
+O projeto foi criado originalmente por Avelino com contribuicoes de Fernando Montanha (@femontanha) e Eduardo Matos (@eduardojmatos). Comecou como um template Bootstrap simples e foi redesenhado com uma interface moderna em 2026.
+
+## Licenca
+
+Projeto open source disponivel em https://github.com/avelino/estimaai.com

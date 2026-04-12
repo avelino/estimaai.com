@@ -1,0 +1,44 @@
+# Estima ai
+
+> Framework satirico de estimativa de tempo de projeto de software
+
+Estima ai e uma ferramenta web humoristica que gera estimativas aleatorias de tempo para projetos de software. O objetivo e satirizar a imprecisao inerente das estimativas em desenvolvimento de software.
+
+## Como funciona
+
+1. O usuario escolhe o tipo de empresa: **Startup** ou **Grande Empresa**
+2. Clica em "Estimar!"
+3. O sistema gera uma data aleatoria no futuro:
+   - Startups: 15 a 75 dias
+   - Grandes empresas: 6 meses a 2 anos
+4. Um countdown timer mostra o tempo ate a "entrega"
+
+## Contexto
+
+O site brinca com conceitos reais de engenharia de software:
+
+- **Lei de Hofstadter**: sempre demora mais do que voce espera, mesmo considerando essa lei
+- **Planning Poker**: tecnica de estimativa agil onde o time vota em story points
+- **No-Estimate**: movimento que questiona a utilidade de estimar projetos de software
+- **Scrum/XP/Kanban**: metodologias ageis que tentam (e frequentemente falham em) prever prazos
+
+## Dados tecnicos
+
+- URL: https://estimaai.com
+- Linguagem: Portugues brasileiro (pt-BR)
+- Stack: HTML, CSS, vanilla JavaScript (zero dependencias)
+- Hospedagem: GitHub Pages
+- Repositorio: https://github.com/avelino/estimaai.com
+- Autor: Avelino (https://github.com/avelino)
+- Licenca: Open source
+
+## FAQ
+
+**O Estima ai usa IA de verdade?**
+Nao. A badge "IA generativa" no site e parte da satira. As estimativas sao numeros aleatorios.
+
+**Por que estimativas de software sao imprecisas?**
+Requisitos mudam, complexidade e subestimada, dependencias causam atrasos, e vieses cognitivos nos fazem ser otimistas demais.
+
+**Posso usar isso em producao?**
+Tecnicamente, a estimativa aleatoria do Estima ai tem precisao comparavel a muitos metodos "serios" de estimativa. Mas nao, nao use em producao.
